@@ -6,4 +6,5 @@ pipelines:
         services:
           - docker
         script: 
+          - docker login -u $DOCKER_HUB_USER -p $DOCKER_HUB_PASSWORD
           - bash ./build.sh
