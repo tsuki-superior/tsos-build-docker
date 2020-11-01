@@ -1,0 +1,9 @@
+image: atlassian/default-image:2
+
+pipelines:
+  default:
+    - step:
+        services:
+          - docker
+        script: 
+          - bash ./build.sh
