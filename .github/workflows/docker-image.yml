@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag tsos-build:$(date +%s)
+    - run: docker login -u $USERNAME -p $PASSWORD && docker build . --file Dockerfile --tag tsos-build:$(date +%s)
