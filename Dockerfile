@@ -7,3 +7,4 @@ RUN apt-get -y install g++ gcc make dos2unix python3 libncurses-dev bison flex l
 RUN git clone https://github.com/tsuki-superior/tsos-toolchain.git
 RUN chmod +x tsos-toolchain/install-linux.sh
 RUN tsos-toolchain/install-linux.sh
+RUN rm -rfv tsos-toolchain
