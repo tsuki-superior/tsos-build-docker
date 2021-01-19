@@ -1,4 +1,4 @@
-FROM debian
+FROM ubuntu
 RUN apt-get -y update
 RUN apt-get -y install software-properties-common apt-utils
 RUN apt-get -y update
